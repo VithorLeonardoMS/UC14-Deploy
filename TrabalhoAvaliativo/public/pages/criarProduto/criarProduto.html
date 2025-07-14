@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/header.css">
+</head>
+<body>
+    <header>
+        <img id="logo-do-site" src="https://www.pichau.com.br/logo-pichau-2021-dark.png" alt="Logo do site">
+        <div class="header-container">
+            <nav class="nav-buttons">
+                <button id="nav-inicio"> Inicio </button>
+                <button id="nav-produtos"> Produtos </button>
+                <button id="nav-meus-produtos"> Meus produtos</button>
+                <button id="nav-criar-produto"> Criar Produto</button>
+            </nav>
+            <form class="pesquisar">
+                <input id="barra-de-pesquisa" type="text" placeholder="pesquisar" aria-label="Pesquisar">
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+    </header>
+    <main>
+        <form id="criar-produto">
+            <div class="campo">
+                <label for="imagem">Imagem:</label>
+                <input class="campoDetexto" type="imagem" name="url da imagem" id="imagem"><span class="obrigatorio">*</span>
+                <p class="mensagem">Preencha com a url da imagem.</p>
+            </div>
+
+            <div class="campo">
+                <label for="nome">nome:</label>
+                <input class="campoDetexto" type="nome" name="nome" id="nome"><span class="obrigatorio">*</span>
+            </div>
+
+            <div class="campo">
+                <label for="imagem">Marca:</label>
+                <input class="campoDetexto" type="marca" name="marca" id="marca">
+            </div>
+
+            <div class="campo">
+                <label for="imagem">Modelo:</label>
+                <input class="campoDetexto" type="modelo" name="modelo" id="modelo">
+            </div>
+
+            <div class="campo">
+                <label for="imagem">Preço:</label>
+                <input class="campoDetexto" type="preco" name="preco" id="preco"><span class="obrigatorio">*</span>
+            </div>
+            
+            <div id="campo-descricao" class="campo">
+                <label for="descricao">Descriçao:</label>
+                <textarea name="descricao" id="descricao" cols="30" rows="4"></textarea><span class="obrigatorio">*</span>
+            </div>
+            
+            <div class="inline-block"> 
+                <p class="obrigatorio"> *</p>
+                <p> Campo obrigatório </p> 
+            </div>
+
+            <input id="btn-criar" type="submit" value="Criar">
+        </form>
+    </main>
+    <footer>
+        <img id="img-decorativo" src="../../components/jataí.png" alt="abelha">
+        <ul class="social">
+            <li><a href="https://github.com/VithorLeonardoMS">Github</a></li>
+            <li><a href="https://www.linkedin.com/in/vithor-leo-58471b292?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Linkedin</a></li>
+            <li><a href="https://www.instagram.com/vithor.leo?utm_source=qr&igsh=MTUyeGJlN3hlMjFyeQ==">Istagram</a></li>
+        </ul>
+    </footer>
+    <script type="module" src="../../js/navButtons.js"></script>
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/indexStyle.css">
+    <title>Login</title>
+</head>
+<body>
+    <div id = "borda">
+        <div id = "telaCentral">
+            <h1>Entrar</h1>
+            <form id="interativo">
+                <div id="insertivo">
+                    <div id="textosAuxiliares">
+                        <p>
+                            <img class = "icon" src="components/user.png" alt="Icone de usuario">
+                            Email: 
+                        </p>
+                        <p>
+                            <img class = "icon" src="components/padlock.png" alt="Icone de senha">
+                            Senha: 
+                        </p>
+                    </div>
+                    <div>
+                        <input class="campoDetexto" type="email" name="email" id="email">
+                        <input class="campoDetexto" type="password" name="password" id="password">
+                    </div>
+                </div>
+                <input class="inputButton" type="submit" value="logar">
+            </form>
+            
+            <p id="registrar">Novo por aqui? <a href="./pages/cadastro/cadastro.html">cadastre-se</a></p>
+            
+        </div>
+    </div>
+    <script type="module" src="./js/login.js"></script>
+</body>
+</html>

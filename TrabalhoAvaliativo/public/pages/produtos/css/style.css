@@ -1,0 +1,82 @@
+html, body, main{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 240, 240);
+}
+
+main{
+    padding-bottom: 10vh;
+}
+
+#nav-produtos{
+    background-color: rgb(143, 0, 0);
+}
+
+
+h2,h3,h4,h5,h6,ul,p{
+    margin: 0;
+}
+
+h1{
+    margin: 20px;
+    font-family:cursive;
+}
+
+.exibicao-produtos{
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+}
+
+.container{
+    margin: 20px;
+    padding: 20px;
+    height: 400px;
+    width: 220px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow:
+    -1px 1px 3px rgba(60, 60, 60, 0.5),
+    0 0 2px rgba(255, 255, 255, 0.3);
+}
+
+.topo-produto{
+    height: 30px;
+}
+
+.imagem-do-produto{
+    width: 220px;
+    height: 220px;
+    background-color: azure;
+}
+
+.info-produto{
+    height: 110px;
+}
+
+.imagem-do-produto img{
+    width: 220px;
+    height: 220px;
+}
+
+#btn-deletar{
+
+}
+
+.button-1{
+    background-color: rgb(255, 0, 0);
+    margin: 10px 0;
+    border: 0;
+    border-radius: 2px;
+    padding: 4px;
+    font-size:medium;
+    color: white;
+    
+}
+
+.button-1:hover{
+    background-color: rgb(238, 0, 0);
+
+}

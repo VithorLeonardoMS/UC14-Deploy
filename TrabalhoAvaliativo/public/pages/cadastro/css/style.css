@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    background-image: url('../components/backgroundImage.png');
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;    
+}
+
+h1{
+    font-size: 5vh;
+    margin: 0 0 10%;
+    height: max-content
+}
+
+p{
+    font-size: 2.5vh;
+    width: max-content;
+}
+
+.campoDetexto{
+    margin-bottom: 0.2vh;
+    margin-left: 1vh;
+    font-size: 2.5vh;
+    padding: 0.5vh;
+    border-radius: 0.5vh;
+    border-color: rgb(211, 211, 211);
+    background-color: rgba(255, 255, 255, 0.65);
+}
+
+.inputButton{
+    margin-top: 1%;
+    font-size: 2.5vh;
+    padding: 0.7vh;
+    border-radius: 0.5vh;
+    border-color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.65);
+}
+
+button:hover{
+    background-color: rgba(221, 221, 221, 1);
+}
+
+.icon{
+    width: auto;
+    height: 2.3vh;
+    margin: 0 0.4vh 0 0;
+}
+
+#borda{
+    border: 2px solid rgb(221, 161, 83);
+}
+
+#interativo{
+    height: 60%;
+}
+
+#insertivo{
+    display: flex;
+    justify-items: center;
+}
+
+#logar{
+    height: max-content;
+}
+
+#telaCentral{
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 50vh;
+    height: 35vh;
+    padding: 9vh;
+    margin: 2px;
+}
+
+#textosAuxiliares{
+    display: grid;
+    align-items:center;
+    justify-items: left;
+    height: 8.2vh;
+}
+
+

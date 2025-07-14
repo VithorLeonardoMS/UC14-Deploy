@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/header.css">
+</head>
+<body>
+    <header>
+        <img id="logo-do-site" src="https://www.pichau.com.br/logo-pichau-2021-dark.png" alt="Logo do site">
+        <div class="header-container">
+            <nav class="nav-buttons">
+                <button id="nav-inicio"> Inicio </button>
+                <button id="nav-produtos"> Produtos </button>
+                <button id="nav-meus-produtos"> Meus produtos</button>
+                <button id="nav-criar-produto"> Criar Produto</button>
+            </nav>
+            <form class="pesquisar">
+                <input id="barra-de-pesquisa" type="text" placeholder="pesquisar" aria-label="Pesquisar">
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+    </header>
+    <main>
+        <h1>Veja os produtos criados pelos usuarios</h1>
+        <section class="exibicao-produtos">
+            <div class="container">
+                <div class="topo-produto">
+                    <h6>Por: Nome do usuario</h6>
+                    <h6 class="productId">Id</h6>
+                </div>
+                <div class="imagem-do-produto">
+                    <img src="" alt="Imagem do produto">
+
+                </div>
+                <div class="info-produto">
+                    <h3>Nome do produto</h4>
+                    <p>Modelo</p>
+                    <h6>Marca</h6>
+                    <p>"Descrição em texto"</p>
+                    <h4>Preço</h4>
+                    
+                </div>
+                <div class="botoes-produto">
+                    <button id="btn-deletar" class="button-1">Deletar</button>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <img id="img-decorativo" src="../../components/jataí.png" alt="abelha">
+        <ul class="social">
+            <li><a href="https://github.com/VithorLeonardoMS">Github</a></li>
+            <li><a href="https://www.linkedin.com/in/vithor-leo-58471b292?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Linkedin</a></li>
+            <li><a href="https://www.instagram.com/vithor.leo?utm_source=qr&igsh=MTUyeGJlN3hlMjFyeQ==">Istagram</a></li>
+        </ul>
+    </footer>
+    <script type="module" src="../../js/navButtons.js"></script>
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>

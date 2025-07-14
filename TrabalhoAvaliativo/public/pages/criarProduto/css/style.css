@@ -1,0 +1,85 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 240, 240);
+}
+
+main{
+    padding-bottom: 10vh;
+}
+
+#nav-criar-produto{
+    background-color: rgb(143, 0, 0);
+}
+
+h2,h3,h4,h5,h6,ul,p{
+    margin: 0;
+}
+
+main{
+    display: flex;
+    justify-content: left;
+    padding: 40px;
+    margin-bottom: 10vh;
+}
+
+.inline-block{
+    display: flex;  
+}
+
+#criar-produto{
+    background-color: aqua;
+    padding: 20px 60px;
+    height: 300px;  
+    display: flexbox;
+}
+ 
+.campo{
+    margin-bottom: 10px;
+}
+ 
+.campo label{
+    font-weight: bold;
+    margin-right: 2px;
+}
+
+.obrigatorio{
+    color: red;
+    margin-right: 1px;
+}
+
+.mensagem{
+    font-style: italic;
+}
+
+#imagem{
+    margin-left: 8px;
+}
+
+#nome{
+    margin-left: 27px;
+}
+
+#marca{
+    margin-left: 18px;
+}
+
+#modelo{
+    margin-left: 11px;
+}
+
+#preco{
+    margin-left: 24px;
+}
+
+#campo-descricao{
+    display: flex;
+    align-items: self-start;
+}
+
+#btn-criar{
+    margin: 10px 0;
+}
+

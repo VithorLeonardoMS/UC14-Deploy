@@ -1,0 +1,68 @@
+body, html {
+    overflow-x: hidden;
+}
+
+header{
+    background-color: rgb(101, 101, 101);
+    height: auto;
+    width: 100%;
+    padding: 8px;
+    max-height: 138px;
+}
+
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width:100%;
+}
+
+#logo-do-site{
+    height: 36px;
+    padding: 4px;
+}
+
+.pesquisar{
+    display: inline-block;
+    margin: 4px;
+    width: auto;
+}
+
+#barra-de-pesquisa{
+    padding: 2px;
+    margin-bottom: 2px;
+    min-width: 70px;    
+}
+
+.pesquisar button{
+    background-color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 2px;
+    padding: 4px;
+    color: white;
+    margin: 2px;
+}
+
+.pesquisar button:hover{
+    background-color: rgb(27, 27, 27);
+}
+
+.nav-buttons{
+    margin: 4px;
+    max-height: 74px;
+    width: auto;
+    min-width: 64px;
+}
+
+.nav-buttons button{
+    background-color: rgb(255, 0, 0);
+    border: none;
+    border-radius: 2px;
+    padding: 4px;
+    color: white;
+    margin: 2px;
+}
+
+.nav-buttons button:hover{
+    background-color: rgb(238, 0, 0);
+}
