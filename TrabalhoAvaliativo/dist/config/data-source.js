@@ -1,0 +1,38 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+require("reflect-metadata");
+const typeorm_1 = require("typeorm");
+const dotenv_1 = __importDefault(require("dotenv"));
+dotenv_1.default.config();
+// Flag para saber se estamos em produção
+const isProduction = process.env.NODE_ENV === "production";
+// Variáveis para configuração da conexão
+let dataSourceOptions;
+if (isProduction) {
+    // Em produção (ex: Render), usa a variável DATABASE_URL
+    dataSourceOptions = {
+        type: "postgres", // Tipo de banco de dados (no Render, geralmente é PostgreSQL)
+        url: process.env.DATABASE_URL, // URL de conexão do banco de dados
+        ssl: { rejectUnauthorized: false }, // Necessário para conexões seguras
+        entities: ["./dist/models/*.js"], // Caminho para os modelos compilados
+        migrations: ["./dist/migrations/*.js"], // Caminho para as migrações compiladas
+        synchronize: false, // Nunca usar synchronize em produção
+        logging: false, // Desabilita logs SQL em produção
+    };
+}
+else {
+    dataSourceOptions = {
+        type: "sqlite",
+        database: "database.sqlite",
+        entities: [".//models/*.js"],
+        migrations: [".//migrations/*.js"],
+        synchronize: false,
+        logging: true,
+    };
+}
+// Criação do DataSource com base nas opções acima
+const AppDataSource = new typeorm_1.DataSource(dataSourceOptions);
+exports.default = AppDataSource;

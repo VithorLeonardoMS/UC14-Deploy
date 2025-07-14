@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 import { Product } from "../models/Product";
-import { AppDataSource } from "../config/data-source";
+import AppDataSource from "../config/data-source";
 import { User } from "../models/User";
 
 const productRepository = AppDataSource.getRepository(Product);

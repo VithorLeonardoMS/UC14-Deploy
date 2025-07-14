@@ -3,7 +3,7 @@ import path from "path";
 import express, { Application } from "express";
 import userRoutes from "./routes/UserRoutes"
 import { Request, Response } from "express";
-import { AppDataSource } from "./config/data-source";
+import AppDataSource from "./config/data-source";
 import { error } from "console";
 import productRoutes from "./routes/ProductRoutes"
 
